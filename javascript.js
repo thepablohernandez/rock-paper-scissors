@@ -68,9 +68,33 @@ if (aux.toLowerCase() === 'rock'){
 console.log ('PLAYERS CHOICE IS '+ playerSelection);
 
 
+// *************    THIRD SECTION   *************
+
+//Now, I take both ComputerSelection and playerSelection and check who the winner is
+
+if (ComputerSelection === playerSelection){
+    console.log('it\'s a Draw, bro');
+} else if (ComputerSelection === 'Rock' && playerSelection === 'Paper'){
+    console.log('Player wins!');
+
+} else if (ComputerSelection === 'Rock' && playerSelection === 'Scissors') {
+    console.log('Computer wins!');
+
+} else if (ComputerSelection === 'Paper' && playerSelection === 'Rock'){
+    console.log('Computer wins!')   ; 
+} else if (ComputerSelection === 'Paper' && playerSelection === 'Scissors'){
+    console.log('Player wins!')   ; 
+} else if (ComputerSelection ==='Scissors' && playerSelection === 'Rock'){
+    console.log('Player wins!');
+} else if (ComputerSelection === 'Scissors' && playerSelection === 'Paper') {
+    console.log('Computer wins!');
+} else {
+    console.log('looks like theres something wrong here...')
+}
 
 
 
-
+//at the moment, it plays only one round, and it only shows who the winner is
+// it doesn't record the result
 
 
