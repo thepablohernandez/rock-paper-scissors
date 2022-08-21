@@ -35,4 +35,29 @@ console.log('COMPUTERS CHOICE IS '+ ComputerSelection); // this is just to test 
 
 // *************    SECOND SECTION   *************
 
+/* this sections goal is to develop a prompt that saves the users choice
+and that can handle uppercase, lowercase, and combinations */
+
+
+// first, I create a variable to store the users choice
+
+let playerSelection;
+
+// then, a prompt that assings its result to an auxiliary variable
+// why an aux variable? to save the prompt, no matter if the input is useful/valid or not
+
+let aux = prompt('Make your choice, player: Rock, Paper or Scissors?');
+console.log (aux); //just to check
+
+// now, I write a function that converts the input to a valid value for later comparison with the computers choice
+
+
+
+// and last, I assing the return value of the function to my 'playerSelection' variable:
+
+
+
+
+
+
 
