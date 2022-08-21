@@ -50,10 +50,23 @@ let aux = prompt('Make your choice, player: Rock, Paper or Scissors?');
 console.log (aux); //just to check
 
 // now, I write a function that converts the input to a valid value for later comparison with the computers choice
+//finally, a function was not needed
 
+if (aux.toLowerCase() === 'rock'){
+    playerSelection = 'Rock';
 
+} else if (aux.toLowerCase() === 'paper') {
+    playerSelection = 'Paper';
 
-// and last, I assing the return value of the function to my 'playerSelection' variable:
+} else if (aux.toLowerCase() === 'scissors') {
+    playerSelection = 'Scissors';
+
+} else {
+    console.log ('Not valid, Ill put a prompt here in the future')
+}
+
+console.log ('PLAYERS CHOICE IS '+ playerSelection);
+
 
 
 
