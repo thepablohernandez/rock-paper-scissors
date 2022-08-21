@@ -1,3 +1,5 @@
+// *************    FIRST SECTION   *************
+
 /* For the first section of the file I will work on one or more functions
 to generate a random choice for the computer (between rock, paper or scissors) and save it
 to later on use it and compare against users choice*/
@@ -28,4 +30,9 @@ function getComputerChoice () {
 // ... then, save the result of the previous function in the variable ComputerSelection
 
 let ComputerSelection = getComputerChoice ();
-console.log(ComputerSelection); // this is just to test the function and its assingment
+console.log('COMPUTERS CHOICE IS '+ ComputerSelection); // this is just to test the function and its assingment
+
+
+// *************    SECOND SECTION   *************
+
+
