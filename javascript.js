@@ -12,11 +12,16 @@ function getComputerChoice () {
     
     let choice = Math.random();
     if (choice <= 1/3) {
-        console.log(choice);
+        console.log(choice);//just to check
         return 'Rock'
     }
-    else {
-        return choice;
+    else if (choice > 1/3 && choice < 2/3){
+        console.log(choice); //just to check         
+        return 'Paper'; 
+    } else {
+        console.log(choice); //just to check;
+        return 'Scissors'
+            
     }
 }
 
