@@ -124,3 +124,12 @@ playRound(playerSelection,ComputerSelection);
 }
 
 
+// *************    LAST SECTION   *************
+
+// Compare the records to show a message determining the final winner
+
+if (playerRecord < computerRecord){
+    console.log('Computer wins... FLAWLESS VICTORY');
+} else {
+    console.log('You win... FLAWLESS VICTORY');
+};
