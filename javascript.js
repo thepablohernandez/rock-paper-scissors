@@ -26,14 +26,14 @@ function getComputerChoice () {
     
     let choice = Math.random();
     if (choice <= 1/3) {
-        console.log(choice);//just to check
+        //console.log(choice);//just to check
         return 'Rock'
     }
     else if (choice > 1/3 && choice < 2/3){
-       console.log(choice); //just to check         
+       //console.log(choice); //just to check         
         return 'Paper'; 
     } else {
-       console.log(choice); //just to check;
+       //console.log(choice); //just to check;
         return 'Scissors'
             
     }
@@ -55,22 +55,27 @@ and that can handle uppercase, lowercase, and combinations */
 
 let playerSelection;
 
-// then, a prompt that assings its result to an auxiliary variable
-// why an aux variable? to save the prompt, no matter if the input is useful/valid or not
+
 
 
 //I write a function to keep asking for a valid input while the playerSelection is undefined. once it has a valid value, it stops asking
 
 function playerInput(){
 
+
+
     while (playerSelection === undefined){
 
     
 let aux = prompt('Make your choice, player: Rock, Paper or Scissors?');
+
+// then, write a prompt that assings its result to an auxiliary variable
+// why an aux variable? to save the prompt, no matter if the input is useful/valid or not
+
 //console.log (aux); //just to check
 
-// now, I write a function that converts the input to a valid value for later comparison with the computers choice
-//finally, a function was not needed
+// now, a conditional that converts the input to a valid value for later comparison with the computers choice
+
 
 if (aux.toLowerCase() === 'rock'){
     playerSelection = 'Rock';
@@ -82,7 +87,7 @@ if (aux.toLowerCase() === 'rock'){
     playerSelection = 'Scissors';
 
 } else {
-    console.log ('Seems like you made a typo, please try again')
+    console.log ('********  Seems like you made a typo, please try again  ********')
 }
 
 console.log ('PLAYERS CHOICE IS '+ playerSelection);
