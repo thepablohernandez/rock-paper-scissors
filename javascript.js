@@ -72,6 +72,9 @@ console.log ('PLAYERS CHOICE IS '+ playerSelection);
 
 //Now, I take both ComputerSelection and playerSelection and check who the winner is
 
+function playRound (playerSelection, ComputerSelection){
+    
+
 if (ComputerSelection === playerSelection){
     console.log('it\'s a Draw, bro');
 } else if (ComputerSelection === 'Rock' && playerSelection === 'Paper'){
@@ -90,6 +93,10 @@ if (ComputerSelection === playerSelection){
     console.log('Computer wins!');
 } else {
     console.log('looks like theres something wrong here...')
+}
+
+
+
 }
 
 
