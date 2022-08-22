@@ -151,3 +151,5 @@ if (playerRecord < computerRecord){
 } else {
     console.log('it\'s a draw :(');
 };
+
+console.log('Press F5 to play again :)')
