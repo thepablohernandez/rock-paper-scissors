@@ -77,7 +77,9 @@ let aux = prompt('Make your choice, player: Rock, Paper or Scissors?');
 // now, a conditional that converts the input to a valid value for later comparison with the computers choice
 
 
-if (aux.toLowerCase() === 'rock'){
+if (aux === null){
+    console.log ('********  Don\'t press cancel man... why don\'t you want to play?  ********')
+} else if (aux.toLowerCase() === 'rock'){
     playerSelection = 'Rock';
 
 } else if (aux.toLowerCase() === 'paper') {
