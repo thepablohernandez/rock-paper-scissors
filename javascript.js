@@ -70,6 +70,11 @@ console.log ('PLAYERS CHOICE IS '+ playerSelection);
 
 // *************    THIRD SECTION   *************
 
+// I add two variables to keep record:
+
+let computerRecord = 0;
+let playerRecord = 0;
+
 //Now, I take both ComputerSelection and playerSelection and check who the winner is
 
 function playRound (playerSelection, ComputerSelection){
@@ -79,29 +84,35 @@ if (ComputerSelection === playerSelection){
     console.log('it\'s a Draw, bro');
 } else if (ComputerSelection === 'Rock' && playerSelection === 'Paper'){
     console.log('Player wins!');
+    playerRecord = playerRecord +1;
 
 } else if (ComputerSelection === 'Rock' && playerSelection === 'Scissors') {
     console.log('Computer wins!');
-
+    computerRecord = computerRecord + 1;
 } else if (ComputerSelection === 'Paper' && playerSelection === 'Rock'){
     console.log('Computer wins!')   ; 
+    computerRecord = computerRecord + 1;
 } else if (ComputerSelection === 'Paper' && playerSelection === 'Scissors'){
     console.log('Player wins!')   ; 
+    playerRecord = playerRecord +1;
 } else if (ComputerSelection ==='Scissors' && playerSelection === 'Rock'){
     console.log('Player wins!');
+    playerRecord = playerRecord +1;
 } else if (ComputerSelection === 'Scissors' && playerSelection === 'Paper') {
     console.log('Computer wins!');
+    computerRecord = computerRecord + 1;
 } else {
     console.log('looks like theres something wrong here...')
 }
 
+console.log('Player record is: '+playerRecord+' ... Computer record is: '+computerRecord);
 
 
 }
 
+playRound(playerSelection,ComputerSelection);
+
 
 
 //at the moment, it plays only one round, and it only shows who the winner is
-// it doesn't record the result
-
 
