@@ -1,3 +1,15 @@
+
+
+// I add two variables to keep record. the variables go before the following for statement, so they start with 0...
+//... but they do not restart every round
+
+let computerRecord = 0;
+let playerRecord = 0;
+
+// the next for statement plays 5 rounds of rock, paper, scissors
+
+for (let i = 0; i < 5; i++) {
+
 // *************    FIRST SECTION   *************
 
 /* For the first section of the file I will work on one or more functions
@@ -70,10 +82,7 @@ console.log ('PLAYERS CHOICE IS '+ playerSelection);
 
 // *************    THIRD SECTION   *************
 
-// I add two variables to keep record:
 
-let computerRecord = 0;
-let playerRecord = 0;
 
 //Now, I take both ComputerSelection and playerSelection and check who the winner is
 
@@ -112,7 +121,6 @@ console.log('Player record is: '+playerRecord+' ... Computer record is: '+comput
 
 playRound(playerSelection,ComputerSelection);
 
+}
 
-
-//at the moment, it plays only one round, and it only shows who the winner is
 
