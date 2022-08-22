@@ -30,10 +30,10 @@ function getComputerChoice () {
         return 'Rock'
     }
     else if (choice > 1/3 && choice < 2/3){
-        console.log(choice); //just to check         
+       console.log(choice); //just to check         
         return 'Paper'; 
     } else {
-        console.log(choice); //just to check;
+       console.log(choice); //just to check;
         return 'Scissors'
             
     }
@@ -146,6 +146,8 @@ playRound(playerSelection,ComputerSelection);
 
 if (playerRecord < computerRecord){
     console.log('Computer wins... FLAWLESS VICTORY');
-} else {
+} else if (playerRecord > computerRecord) {
     console.log('You win... FLAWLESS VICTORY');
+} else {
+    console.log('it\'s a draw :(');
 };
